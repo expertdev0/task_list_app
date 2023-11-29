@@ -1,0 +1,53 @@
+.container {
+    background-color: inherit;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: relative;
+    width: 6rem;
+    height: 3rem;
+    transform: scale(0.75);
+
+    &:active {
+        border-style: outset;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.sun {
+    color: #f9d71c;
+}
+
+.moon {
+    color: #8865a0;
+}
+
+.toggle {
+    position: absolute;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.35s ease-out;
+
+    &.light {
+        left: 5px;
+    }
+
+    &.dark {
+        right: 5px;
+    }
+
+    &.moveLight {
+        transform: translateX(-3rem);
+    }
+}
